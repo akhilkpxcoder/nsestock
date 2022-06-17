@@ -1,6 +1,6 @@
 //const Stock = require("../models/stock.js");
 const mongoose = require("mongoose");
-const url = "mongodb://localhost:27017/nodedemo";
+const url = "mongodb+srv://root:1234@nsestocks.sxt8n6q.mongodb.net/nsedb";
 
 const getStocks = async (req, res, next) => {
     try {

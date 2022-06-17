@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3001;
 
 app.use(bodyParser.json());
-app.use(cors({ origin: ['http://localhost:8080'], }));
+app.use(cors({ origin: ['http://localhost:8081'], }));
 //to router
 app.use("/stock", StockRouter);
 //to home page
