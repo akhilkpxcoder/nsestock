@@ -7,7 +7,7 @@ const getStocks = async (req, res, next) => {
       mongoose.connect(url, (err, db) => {
         if (err) throw err;
         db.collection("NseStocks").find({}).toArray((err, result) => {   
-          const value=  result.filter(x => x.Name.toLowerCase().startsWith(req.params.Name.toLowerCase()))
+          const value =  result.filter(x => x.Name.toLowerCase().startsWith(req.params.Name.toLowerCase()))
           return res.json(value);
         });
       });

@@ -1,0 +1,14 @@
+.maincontainer{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.logincontainer{
+margin-top: 10vh;
+padding: 50px;
+flex-direction: column;
+display: inherit;
+height: 40vh;
+justify-content: space-evenly;
+}
